@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('1.jpg.png'); /* Arka plan görseli */
+    background-size: cover; /* Görselin tam ekran kaplaması için */
+    background-position: center; /* Görselin ortalanması için */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(51, 51, 51, 0.8); /* Şeffaf arka plan */
+    overflow: hidden;
+    width: 100%; /* Mobil uyumlu için genişlik ayarı */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(17, 17, 17, 0.8); /* Şeffaf arka plan */
+}
+
+header {
+    background-color: rgba(135, 206, 235, 0.8); /* Şeffaf mavi tonlarında */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    width: 100%; /* Mobil uyumlu için genişlik ayarı */
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 3em; /* Başlığı büyütmek için */
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Şeffaf arka plan */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Mobil uyumlu için genişlik ayarı */
+    max-width: 800px; /* Maksimum genişlik sınırlaması */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(135, 206, 235, 0.8); /* Şeffaf mavi tonlarında */
+    color: white;
+    border-top: 2px solid #333;
+    width: 100%; /* Mobil uyumlu için genişlik ayarı */
+}
+
+/* Mobil uyumlu stil ayarları */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Başlığı mobil uyumlu yapmak için küçültüldü */
+    }
+    
+    section {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 5px;
+    }
+    
+    nav ul {
+        flex-direction: column; /* Mobilde menünün dikey olmasını sağlamak için */
+    }
+    
+    nav ul li {
+        margin: 10px 0; /* Mobilde menü öğeleri arasına boşluk eklemek için */
+    }
+}
