@@ -1,3 +1,4 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,24 +7,25 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('2.jpg.png'); /* Arka plan görseli */
-    background-size: cover; /* Görselin tam ekran kaplaması için */
-    background-position: center; /* Görselin ortalanması için */
-    margin: 0;
-    padding: 0;
+    background-image: url('2.jpg.png'); 
+    background-size: cover; 
+    background-position: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0; 
+    margin: 0;
+    height: 100%; 
 }
 
+/* Navigation Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: rgba(51, 51, 51, 0.8); /* Şeffaf arka plan */
+    background-color: rgba(51, 51, 51, 0.8); 
     overflow: hidden;
-    width: 100%; /* Mobil uyumlu için genişlik ayarı */
+    width: 100%; 
     display: flex;
     justify-content: center;
 }
@@ -39,64 +41,71 @@ nav ul li a {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    transition: background-color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    background-color: rgba(17, 17, 17, 0.8); /* Şeffaf arka plan */
+    background-color: rgba(17, 17, 17, 0.8); 
 }
 
+/* Header Styling */
 header {
-    background-color: rgba(135, 206, 235, 0.8); /* Şeffaf mavi tonlarında */
+    background-color: rgba(135, 206, 235, 0.8); 
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #333;
-    width: 100%; /* Mobil uyumlu için genişlik ayarı */
+    width: 100%; 
 }
 
 header h1 {
     margin: 0;
     color: white;
-    font-size: 3em; /* Başlığı büyütmek için */
+    font-size: 3em; 
 }
 
+/* Section Styling */
 section {
     margin: 20px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Şeffaf arka plan */
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.8); 
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%; /* Mobil uyumlu için genişlik ayarı */
-    max-width: 800px; /* Maksimum genişlik sınırlaması */
+    width: 100%; 
+    max-width: 800px; 
 }
+
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(135, 206, 235, 0.8); /* Şeffaf mavi tonlarında */
+    background-color: rgba(135, 206, 235, 0.8); 
     color: white;
     border-top: 2px solid #333;
-    width: 100%; /* Mobil uyumlu için genişlik ayarı */
+    width: 100%; 
+    border-radius: 5px; 
 }
 
-/* Mobil uyumlu stil ayarları */
+
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2em; /* Başlığı mobil uyumlu yapmak için küçültüldü */
+        font-size: 2em;
     }
     
     section {
-        padding: 10px;
+        padding: 15px; 
     }
     
     footer {
-        padding: 5px;
+        padding: 8px;
     }
     
     nav ul {
-        flex-direction: column; /* Mobilde menünün dikey olmasını sağlamak için */
+        flex-direction: column;
+        align-items: center; 
     }
     
     nav ul li {
-        margin: 10px 0; /* Mobilde menü öğeleri arasına boşluk eklemek için */
+        margin: 10px 0; 
     }
 }
+
