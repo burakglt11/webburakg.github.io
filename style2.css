@@ -1,24 +1,26 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+
+html, body {
+    height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url('1.jpg.png'); /* Arka plan görseli */
-    background-size: cover; /* Görselin tam ekran kaplaması için */
-    background-position: center; /* Görselin ortalanması için */
-    margin: 0;
-    padding: 0;
+    background-image: url('1.jpg.png'); 
+    background-size: cover;
+    background-position: center; 
 }
 
+/* Navigation Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: rgba(51, 51, 51, 0.8); /* Şeffaf arka plan */
-    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.8);
+    overflow: hidden; 
 }
 
 nav ul li {
@@ -34,11 +36,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(17, 17, 17, 0.8); /* Şeffaf arka plan */
+    background-color: rgba(17, 17, 17, 0.8);
 }
 
+/* Header Styling */
 header {
-    background-color: rgba(135, 206, 235, 0.8); /* Şeffaf mavi tonlarında */
+    background-color: rgba(135, 206, 235, 0.8);
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #333;
@@ -47,36 +50,56 @@ header {
 header h1 {
     margin: 0;
     color: white;
-    font-size: 3em; /* Başlığı büyütmek için */
+    font-size: 3em;
 }
 
+/* Section Styling */
 section {
     margin: 20px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Şeffaf arka plan */
+    background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(135, 206, 235, 0.8); /* Şeffaf mavi tonlarında */
+    background-color: rgba(135, 206, 235, 0.8);
     color: white;
     border-top: 2px solid #333;
 }
 
-/* Mobil uyumlu stil ayarları */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
+    /* Header font size adjustment */
     header h1 {
-        font-size: 2em; /* Başlığı mobil uyumlu yapmak için küçültüldü */
+        font-size: 2em;
     }
-    
+
+    /* Section padding and margin adjustments */
     section {
-        padding: 10px;
+        padding: 15px;
+        margin: 10px;
     }
-    
+
+    /* Footer padding adjustments */
     footer {
-        padding: 5px;
+        padding: 8px;
+    }
+
+    
+    nav ul {
+        text-align: center; 
+    }
+
+    nav ul li {
+        float: none; 
+        display: inline-block; 
+    }
+
+    nav ul li a {
+        padding: 12px 15px;
     }
 }
